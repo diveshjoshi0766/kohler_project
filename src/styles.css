@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+body {background-color: #000000 !important} 
+
+._container{
+    margin-left: 108px;
+    margin-right: 108px;
+}
+@media screen and (max-width: 1024px) {
+  ._container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+h1{
+  font-family: "Roboto-Regular";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+}
+
+h2{
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+}
+
+h3{
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #ffffff;
+}
+
+h4{
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #ffffff;
+}
+
+h5{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #ffffff;
+}
+
+h6{
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.logo_initial_1{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.logo_initial_2{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+}

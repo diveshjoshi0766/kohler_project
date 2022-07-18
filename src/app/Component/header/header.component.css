@@ -1,0 +1,259 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 126px;
+    background-color: black;
+}
+.header_logo{
+    margin-left: 16px;
+    margin-top: 46;
+}
+.header_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header_text i{
+    padding-right: 10px;
+}
+.header_sub_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header_logo_text{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+li{
+    display: inline-block;
+}    
+nav{
+    height: 74px;
+    border-bottom: 1px solid #00A3A3;;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-left: 22px;
+    z-index: 1000;
+    background-color: black;
+}
+nav ul li a{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+nav li{
+    color: #ffffff;
+    padding-top: 34px;
+}
+
+nav ul li a{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover{
+    color: #00A3A3;
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle-btn{
+    display: none;
+    text-align: right;
+}
+#toggle_btn_cross{
+    display: none;
+    text-align: right;
+}
+
+#toggle-btn i{
+    font-size: 25px;
+    padding: 7px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle_btn_cross i{
+    font-size: 25px;
+    padding: 7px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown_class{
+    display: flex;
+    flex-direction: col;
+}   
+.dropdown_class ul {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown__icon{
+    display: none;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.li_ele_display{
+    width: 100%;
+    height: 210px;
+    background-color: #383B76;
+}
+.li_elements{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-rows: 123px 82px;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 12px;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.li_elements li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-style: Roboto, "Helvetica Neue", sans-serif;
+}
+@media (min-width: 429px) and (max-width: 1024px) {
+    .li_ele_display{
+        display: none;
+    }
+    .dropdown__icon{
+        display: block;
+    }
+    .dropdown_div{
+        display: flex;
+        flex-direction: row;
+    }
+    .list_ul > li {
+        color:white;
+        padding-top: 5px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .list_ul > li > a {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 42px;
+    }
+    #toggle-btn{
+        display: flex;
+    }
+    #toggle_btn_cross{
+        display: flex;
+    }
+    nav > ul{
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: left;
+    }
+    nav ul li a{
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    nav ul li a:hover{
+        color: #00A3A3;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 428px) {
+    .li_ele_display{
+        display: none;
+    }
+    .dropdown__icon{
+        display: block;
+    }
+    .dropdown_div{
+        display: flex;
+        flex-direction: row;
+    }
+    .list_ul > li {
+        color:white;
+        padding-top: 5px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .list_ul > li > a {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 42px;
+    }
+    .header_text p{
+        display: none;
+    }
+    .header_logo_text{
+        display: none;
+    }
+    #toggle-btn{
+        display: block;
+    }
+    #toggle_btn_cross{
+        display: block;
+    }
+    nav > ul{
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: left;
+    }
+    nav ul li p{
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
