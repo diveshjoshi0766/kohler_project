@@ -1,0 +1,25 @@
+.card{border-radius:8px;}
+.card h5{color:#FFFFFF; margin-bottom:8px; }
+.card{background-color:#152A2C; padding:20px;}
+.card-text{color:#FFFFFF; margin-bottom:18px !important;}
+.card-text span{color:#4F979E;}
+.card hr{border: 1px solid #126969; margin-bottom:8px; margin-bottom:8px;}
+.card-body{padding:0;}
+.card img{margin-bottom:14px;}
+.card .btn{padding:5px .5rem; margin-top:10px;}
+.card .btn-secondary{background-color:#152A2C; border-color:#006666; width:100%; border-radius:45px;}
+.card .btn-primary{background-color:#006666; border-color:transparent; border-radius:45px; width:100%;}
+/*CUSTOM CSS*/
+.card-bar{ display:flex; justify-content:center; width:100%;}
+.card-bar img{margin-bottom:0; margin-right:9px; cursor:pointer;}
+.status-boxes{position:relative;}
+.status{background-color:#006666; position:absolute; top:10px; width:100%; min-height:238px; border-radius:8px; padding:16px; display:none;}
+.status::after{width: 0; height: 0; border-left: 19px solid transparent; border-right: 19px solid transparent; border-bottom: 16px solid #006666;  content: ''; position: absolute; top:-14px; left:68px; border-radius:2px;}
+.status .data-name{color:#67D0DA; font-size:14px;}
+.status p{color:#FFFFFF; font-size:16px; line-height:24px; margin-bottom:0;}
+/* .close{background-image:url("close.svg"); width:44px; height:44px; position:absolute; right:16px; bottom:16px; cursor:pointer;} */
+.details{margin-bottom:16px;}
+.disconnected{color:#F83866 !important;}
+.ethernet-status::after{left:122px;}
+.bluetooth-status::after{left:175px;}
+.zigbee-status::after{left:227px;}

@@ -32,7 +32,6 @@
 ul{
     list-style: none;
     padding: 0;
-    margin: 0;
     cursor: default;
 }
 
@@ -40,6 +39,7 @@ li{
     display: inline-block;
 }    
 nav{
+    background-color: #000000;
     height: 74px;
     border-bottom: 1px solid #00A3A3;;
 }
@@ -63,7 +63,6 @@ nav ul li a{
 
 nav li{
     color: #ffffff;
-    padding-top: 34px;
 }
 
 nav ul li a{
@@ -84,7 +83,6 @@ nav ul li a:hover{
 #toggle{
     display: none;
 }
-
 #toggle-btn{
     display: none;
     text-align: right;
@@ -93,7 +91,6 @@ nav ul li a:hover{
     display: none;
     text-align: right;
 }
-
 #toggle-btn i{
     font-size: 25px;
     padding: 7px;
@@ -102,7 +99,6 @@ nav ul li a:hover{
     border-radius: 5px;
     cursor: pointer;
 }
-
 #toggle_btn_cross i{
     font-size: 25px;
     padding: 7px;
@@ -112,12 +108,10 @@ nav ul li a:hover{
     cursor: pointer;
 }
 .dropdown_class{
-    display: flex;
-    flex-direction: col;
+    display: block;
 }   
-.dropdown_class ul {
-    display: flex;
-    flex-direction: column;
+.dropdown_class ul{
+    display: block;
 }
 .dropdown__icon{
     display: none;
@@ -125,6 +119,12 @@ nav ul li a:hover{
     background-color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+.list_ul{
+    display: none;
+}
+.dropdown__menu{
+    display: none;
 }
 .li_ele_display{
     width: 100%;
@@ -148,23 +148,49 @@ nav ul li a:hover{
     color: #ffffff;
     font-style: Roboto, "Helvetica Neue", sans-serif;
 }
+
+
 @media (min-width: 429px) and (max-width: 1024px) {
+    .dropdown__item{
+        background-color: aqua;
+    }
     .li_ele_display{
         display: none;
     }
     .dropdown__icon{
-        display: block;
+        display: flex;
     }
     .dropdown_div{
         display: flex;
         flex-direction: row;
+        height: 72px;
+        left: 22px;
     }
-    .list_ul > li {
-        color:white;
-        padding-top: 5px;
+    .list_ul{
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: column; */
+        background-color: #08181B !important;
+    }
+    /* .dropdown__item{
+        display: flex;
+        flex-direction: column;
+        background-color: #08181B !important;
+    } */
+    .nav__link{
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: 0em;
         text-align: left;
-        padding-left: 10px;
     }
+    /* .list_ul > li {
+        color:white;
+        text-align: left;
+        display: block;
+        margin: 0;
+    } */
     .list_ul > li > a {
         font-family: Roboto, "Helvetica Neue", sans-serif;
         font-style: normal;
@@ -180,21 +206,32 @@ nav ul li a:hover{
     }
     nav > ul{
         display: none;
+        gap: 0;
     }
     #toggle:checked + ul{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     nav ul li{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #00A3A3;
+        margin-right: 30px;
+        /* display: block; */
         text-align: left;
+        height: 72px;
+        padding: 0px 34px 0px 32px;
+        /* gap: 56px; */
     }
     nav ul li a{
         font-family: Roboto;
         font-size: 26px;
         font-weight: 400;
-        line-height: 42px;
+        /* line-height: 42px; */
         letter-spacing: 0em;
         text-align: left;
+        /* min-height: 72px; */
     }
     nav ul li a:hover{
         color: #00A3A3;
@@ -202,6 +239,35 @@ nav ul li a:hover{
 }
 
 @media (min-width: 0px) and (max-width: 428px) {
+    .dropdown_class{
+        justify-content: center;
+        align-items: center;
+    }
+    .dropdown_class{
+        display: flex;
+        flex-direction: column;
+    }
+    .li_elements{
+        column-gap: 0;
+        row-gap: 0;
+    }
+    .dropdown__item{
+        background-color: aqua;
+        height: 72px;
+        width: 327px;
+        left: 0px;
+        top: 144px;
+        border-radius: 0px;
+        padding: 0px, 34px, 0px, 32px;
+    }
+    .nav__link{
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
     .li_ele_display{
         display: none;
     }
@@ -209,12 +275,14 @@ nav ul li a:hover{
         display: block;
     }
     .dropdown_div{
+        display: block;
+    }
+    .list_ul{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .list_ul > li {
         color:white;
-        padding-top: 5px;
         text-align: left;
         padding-left: 10px;
     }
@@ -239,13 +307,16 @@ nav ul li a:hover{
     }
     nav > ul{
         display: none;
+        gap: 0;
     }
     #toggle:checked + ul{
         display: block;
     }
     nav ul li{
-        display: block;
+        height: 72px;
+        display: flex;
         text-align: left;
+        gap: 0;
     }
     nav ul li p{
         font-family: Roboto;

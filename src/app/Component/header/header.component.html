@@ -1,4 +1,4 @@
-
+<!-- 
 <header>
     <div class="header">
         <div class="header_logo">
@@ -31,7 +31,7 @@
             <li><a href="#">Presets</a></li>
             <li><a href="#">Experience</a></li>
             <li class="dropdown_class">
-                <div class="dropdown_div">
+                <div class="dropdown_div" [ngStyle]="{'backgroundColor ': showMenuOption ? 'red' : 'blue'}">
                     <a href="#" class="dropdown__link">Settings</a><i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i>
                 </div>
                 <ul class="dropdown__menu list_ul" *ngIf="showMenuOption">
@@ -48,6 +48,83 @@
                 <div class="dropdown_div">
                     <a href="#" class="dropdown__link">Network & Utilities</a><i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i>
                 </div>
+                <ul class="dropdown__menu list_ul" *ngIf="showMenuOption">
+                    <li class="dropdown__item"><a href="#" class="nav__link">OverView</a></li>
+                    <li class="dropdown__item"><a href="#" class="nav__link">Errors</a></li>
+                    <li class="dropdown__item"><a href="#" class="nav__link">Connectivity Log</a></li>
+                    <li class="dropdown__item"><a href="#" class="nav__link">About</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="li_ele_display">
+    <ul class="li_elements" >
+        <li class="dropdown__item"><a href="#" class="nav__link">Global Settings</a></li>
+        <li class="dropdown__item"><a href="#" class="nav__link">DTV+User Int.</a></li>
+        <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
+        <li class="dropdown__item"><a href="#" class="nav__link">Values</a></li>
+        <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
+        <li class="dropdown__item"><a href="#" class="nav__link">Remote Button</a></li>
+    </ul>
+</div> -->
+
+
+
+
+
+<header>
+    <div class="header">
+        <div class="header_logo">
+            <div class="header_sub_logo">
+                <h1>Logo</h1>
+                <div class="header_logo_text">
+                    <p class="logo_initial_1">Anthem</p> <p class="logo_initial_2"> Smart Hub</p>
+                </div>
+            </div>
+        </div>
+        <div class="header_text">
+            <i class="fas fa-user" style="color: white"></i>
+            <p class="logo_initial_2">Kohler Hub User</p>
+            <div id="toggle-btn" *ngIf="showMe">
+                <label for="toggle">
+                    <i class="fas fa-bars"></i>
+                </label>  
+            </div>
+            <div id="toggle_btn_cross" *ngIf="!showMe">
+                <label for="toggle">
+                    <i class="fas fa-cross"></i>
+                </label>  
+            </div>
+        </div>
+    </div>
+    <nav>
+        <input type="checkbox" id="toggle" (click)="valueChanged()">
+        <ul>
+            <li><a href="#">My Devices</a></li>
+            <li><a href="#">Presets</a></li>
+            <li><a href="#">Experience</a></li>
+            <li class="dropdown_class" [ngStyle]="{'backgroundColor': showMenuOption ? '#002121' : '#000000'}">
+                <a href="#" class="dropdown__link">Settings</a><i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i>
+                <!-- <div class="dropdown_div" >
+                    
+                </div> -->
+                <ul class="dropdown__menu list_ul" *ngIf="showMenuOption">
+                    <li class="dropdown__item"><a href="#" class="nav__link">Global Settings</a></li>
+                    <li class="dropdown__item"><a href="#" class="nav__link">DTV+User Int.</a></li>
+                    <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
+                    <li class="dropdown__item"><a href="#" class="nav__link">Values</a></li>
+                    <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
+                    <li class="dropdown__item"><a href="#" class="nav__link">Remote Button</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Updates</a></li>
+            <li class="dropdown_class"  [ngStyle]="{'backgroundColor': showMenuOption ? '#002121' : '#000000'}">
+                <a href="#" class="dropdown__link">Network & Utilities</a><i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i>
+                <!-- <div class="dropdown_div">
+                    
+                </div> -->
                 <ul class="dropdown__menu list_ul" *ngIf="showMenuOption">
                     <li class="dropdown__item"><a href="#" class="nav__link">OverView</a></li>
                     <li class="dropdown__item"><a href="#" class="nav__link">Errors</a></li>

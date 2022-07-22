@@ -12,13 +12,15 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { FooterComponent } from './Component/footer/footer.component';
 import { HeaderComponent } from './Component/header/header.component';
 import { NavbarComponent } from './Component/navbar/navbar.component';
+import { CardComponent } from './Component/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
