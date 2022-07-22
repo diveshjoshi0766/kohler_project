@@ -106,10 +106,8 @@
             <li><a href="#">Presets</a></li>
             <li><a href="#">Experience</a></li>
             <li class="dropdown_class" [ngStyle]="{'backgroundColor': showMenuOption ? '#002121' : '#000000'}">
-                <a href="#" class="dropdown__link">Settings</a><i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i>
-                <!-- <div class="dropdown_div" >
-                    
-                </div> -->
+                <a href="#" class="dropdown__link">Settings</a><div class="align_icon"><i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i></div>
+        
                 <ul class="dropdown__menu list_ul" *ngIf="showMenuOption">
                     <li class="dropdown__item"><a href="#" class="nav__link">Global Settings</a></li>
                     <li class="dropdown__item"><a href="#" class="nav__link">DTV+User Int.</a></li>
@@ -122,9 +120,7 @@
             <li><a href="#">Updates</a></li>
             <li class="dropdown_class"  [ngStyle]="{'backgroundColor': showMenuOption ? '#002121' : '#000000'}">
                 <a href="#" class="dropdown__link">Network & Utilities</a><i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i>
-                <!-- <div class="dropdown_div">
-                    
-                </div> -->
+        
                 <ul class="dropdown__menu list_ul" *ngIf="showMenuOption">
                     <li class="dropdown__item"><a href="#" class="nav__link">OverView</a></li>
                     <li class="dropdown__item"><a href="#" class="nav__link">Errors</a></li>
@@ -146,3 +142,7 @@
         <li class="dropdown__item"><a href="#" class="nav__link">Remote Button</a></li>
     </ul>
 </div>
+
+
+
+
