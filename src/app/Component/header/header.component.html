@@ -1,71 +1,68 @@
-<header>
-    <div class="header">
-        <div class="header_logo">
-            <div class="header_sub_logo">
-                <h1>Logo</h1>
-                <div class="header_logo_text">
-                    <p class="logo_initial_1">Anthem</p> <p class="logo_initial_2"> Smart Hub</p>
-                </div>
-            </div>
-        </div>
-        <div class="header_text">
-            <i class="fas fa-user" style="color: white"></i>
-            <p class="logo_initial_2">Kohler Hub User</p>
-            <div id="toggle-btn" *ngIf="showMe">
-                <label for="toggle">
-                    <i class="fas fa-bars"></i>
-                </label>  
-            </div>
-            <div id="toggle_btn_cross" *ngIf="!showMe">
-                <label for="toggle">
-                    <i class="fas fa-cross"></i>
-                </label>  
+<div class="header">
+    <div class="header_logo">
+        <div class="header_sub_logo">
+            <h1>Logo</h1>
+            <div class="header_logo_text">
+                <p class="logo_initial_1">Anthem</p> <p class="logo_initial_2"> Smart Hub</p>
             </div>
         </div>
     </div>
-    <nav>
-        <input type="checkbox" id="toggle" (click)="valueChanged()">
-        <ul class="nav_list">
-            <li><a href="#">My Devices</a></li>
-            <li><a href="#">Presets</a></li>
-            <li><a href="#">Experience</a></li>
-            <li class="dropdown_class" [ngStyle]="{'backgroundColor': showMenuOption ? '#002121' : '#000000'}">
-                <a href="#" class="dropdown__link">Settings <div class="align_icon"><i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i></div></a>
-                <ul class="dropdown__menu" *ngIf="showMenuOption">
-                    <li class="dropdown__item"><a href="#" class="nav__link">Global Settings</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">DTV+User Int.</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Values</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Remote Button</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Updates</a></li>
-            <!-- <li class="dropdown_class"  [ngStyle]="{'backgroundColor': showMenuOption ? '#002121' : '#000000'}">
-                <a href="#" class="dropdown__link">Network & Utilities<i class='fas fa-cross dropdown__icon' (click)="showMenuOptions()"></i></a>
-        
-                <ul class="dropdown__menu" *ngIf="showMenuOption">
-                    <li class="dropdown__item"><a href="#" class="nav__link">OverView</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Errors</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Connectivity Log</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">About</a></li>
-                </ul>
-            </li> -->
-        </ul>
-    </nav>
-</header>
-
-<div class="li_ele_display">
-    <ul class="li_elements" >
-        <li class="dropdown__item"><a href="#" class="nav__link">Global Settings</a></li>
-        <li class="dropdown__item"><a href="#" class="nav__link">DTV+User Int.</a></li>
-        <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
-        <li class="dropdown__item"><a href="#" class="nav__link">Values</a></li>
-        <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
-        <li class="dropdown__item"><a href="#" class="nav__link">Remote Button</a></li>
-    </ul>
+    <div class="header_text">
+        <i class="fas fa-user" style="color: white"></i>
+        <p class="logo_initial_2">Kohler Hub User</p>
+        <input type="checkbox" id="nav-check">
+        <i class="fas fa-bars"></i>
+        <div class="nav-btn">
+            <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </div>
+    </div>
 </div>
 
-
-
-
+<div class="navbar">    
+    <!-- responsive navbar toggle button -->
+    
+    <!-- Navbar items -->
+    <div class="nav-links">
+      <a href="#">My Devices</a>
+      <a href="#">Presets</a>
+      <a href="#">Experience</a>
+ 
+      <!-- Dropdown menu -->
+      <div class="dropdown">
+        <a class="dropBtn" href="#">Settings 
+          <i class="fas fa-angle-down"></i>
+        </a>
+        <div class="drop-content">
+          <a href="#">Global Settings</a>
+          <a href="#">DTV+User Int.</a>
+          <a href="#">Anthem User Int</a>
+          <a href="#">Values</a>
+          <a href="#">Anthem User Int</a>
+          <a href="#">Remote Button</a>
+ 
+          <!-- Creating sub menu Dropdown -->
+        </div>
+      </div>
+ 
+      <a href="#">Updates</a>
+      <div class="dropdown">
+        <a class="dropBtn" href="#">Network & Utilities 
+          <i class="fas fa-angle-down"></i>
+        </a>
+        <div class="drop-content">
+          <a href="#">Global Settings</a>
+          <a href="#">DTV+User Int.</a>
+          <a href="#">Anthem User Int</a>
+          <a href="#">Values</a>
+          <a href="#">Anthem User Int</a>
+          <a href="#">Remote Button</a>
+ 
+          <!-- Creating sub menu Dropdown -->
+        </div>
+      </div>
+    </div>
+  </div>
