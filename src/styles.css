@@ -3,7 +3,13 @@ body {background-color: #000000 !important}
     margin-left: 108px;
     margin-right: 108px;
 }
-@media screen and (max-width: 1024px) {
+@media (min-width: 430px) and (max-width: 1025px) {
+  ._container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+@media (min-width: 0px) and (max-width: 429px)  {
   ._container {
     margin-left: 0px;
     margin-right: 0px;

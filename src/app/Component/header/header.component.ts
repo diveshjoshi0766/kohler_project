@@ -5,21 +5,34 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
+
 export class HeaderComponent implements OnInit {
-  showMe:boolean = true
-  showMe_:boolean = true
-  showMenuOption: boolean = false
+  show_stg:boolean = false
+  show_ntw:boolean = false
+  imgSrc = window.innerWidth > 1024 ? ('assets/Desktop/Kohler Hub.svg') : window.innerWidth < 428 ? ('assets/Mobile/KohlerIconMobile.svg') : ('assets/Tablet/Kohler Hub.svg')
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  valueChanged(){
-    console.log(this.showMe)
-    this.showMe = !this.showMe
+  show_settings(){
+    this.show_stg = !this.show_stg
   }
-  showMenuOptions() {
-    this.showMenuOption = !this.showMenuOption
+  show_networkSetting(){
+    this.show_ntw = !this.show_ntw
+  }
+  temp_fun() {
+    var menu = document.getElementsByClassName('nav-btn') as HTMLCollectionOf<HTMLElement>;
+    var nav_bar = document.getElementsByClassName('navbar') as HTMLCollectionOf<HTMLElement>;
+    var close = document.getElementsByClassName('nav-btn-cross') as HTMLCollectionOf<HTMLElement>;
+    if(window.getComputedStyle(menu[0])['display'] == 'block'){
+      nav_bar[0].style.display = 'block'
+      menu[0].style.display = 'none';
+      close[0].style.display = 'block';
+    } else{
+      nav_bar[0].style.display = 'none'
+      menu[0].style.display = 'block';
+      close[0].style.display = 'none';
+    }
   }
 
 }

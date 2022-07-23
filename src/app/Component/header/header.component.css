@@ -1,266 +1,450 @@
 .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 126px;
-    background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 126px;
+  background-color: black;
 }
-.header_logo{
-    margin-left: 16px;
-    margin-top: 46;
+.logo_{
+margin-top: 46px;
+margin-left: 15px;
 }
 .header_text{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.desktop_logo{
+  margin-top: 46px;
+}
+.user-profile-icon{
+  margin-top: 55px;
+}
+.logo_initial_1{
+  height: 28px;
+  width: 82px;
+  left: 73px;
+  top: 65px;
+  margin-top: 65px;
+}
+.logo_initial_2_div{
+  margin-top: 68px;
+  display: flex;
+  flex-direction: row;
+}
+.logo_initial_2{
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.logo_initial_2_head{
+  margin-top: 65px;
+  height: 28px;
+  width: 104px;
+  left: 163px;
+  top: 65px;
+  margin-left: 3px;
+  color: #ffffff;
 }
 .header_text i{
-    padding-right: 10px;
+  padding-right: 10px;
 }
 .header_sub_logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  height: 126px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .header_logo_text{
-    display: flex;
-    flex-direction: row;
-    color: #ffffff;
+  margin-top: 46px;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
 }
-
+.down_icon{
+display: none;
+}
 
 /* here we have pasted */
 
-
 .navbar{
-    height: 74px;
-    width: 100%;
-    padding: 19px;
-    background-color: #1b4cd3;
-    position: relative;
+  height: 74px;
+  width: 100%;
+  padding: 19px;
+  position: relative;
+}
+.navbar .nav-header{
+  display: inline;
+}
+.navbar .nav-header .nav-logo{
+  display: inline-block;
+  margin-top: -7px;
+}
+.navbar .nav-links{
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin-top: 34px;
+}
+ 
+.navbar .nav-links a {
+  padding: 10px 12px;
+  text-decoration: none;
+  /* font-weight: 550; */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+/* Hover effects */
+.navbar .nav-links a:hover{
+  color: #00A3A3;
+}
+ 
+/* responsive navbar toggle button */
+#nav-check{
+  display: none;
+}
+
+.nav-btn, .nav-btn-cross{
+  display: none;
+}
+
+/* .nav-links a:hover {
+}
+  */
+@media (min-width: 429px) and (max-width: 1024px)  {
+  .nav-btn-cross{
+    color: #ffffff;
+    height: 32px;
+    width: 32px;
+    border-radius: 1px;
+    margin-top: 21px;
   }
-  .navbar .nav-header{
-    display: inline;
+  .icon_size{
+    height: 32px;
+    width: 32px;
+    left: 6px;
+    top: 6px;
+    border-radius: 1px;
   }
-  .navbar .nav-header .nav-logo{
-    display: inline-block;
-    margin-top: -7px;
+  .nar_bar_btns .nav-btn{
+    margin-top: 21px;
+    display: block;
+    color: #ffffff;
   }
-  .navbar .nav-links{
-    display: inline;
-    float: right;
-    font-size: 18px;
+  .logo_{
+    margin-top: 20px;
   }
-   
-  .navbar .nav-links .loginBtn{
-    display: inline-block;
-    padding: 5px 15px;
-    margin-left: 20px;
-    font-size: 17px;
-    color: rgb(9, 14, 90);
+  .logo_initial_1{
+      height: 28px;
+      width: 82px;
+      left: 73px;
+      margin-top: 39px;
+  }
+  .logo_initial_2_head{
+      height: 28px;
+      width: 104px;
+      left: 161px;
+      margin-top: 39px;
+  }
+  .header{
+      height: 97px;
+  }
+  .logo_initial_2{
+      display: none;
+  }
+  .logo_initial_2_div{
+      position: absolute;
+      margin-top: 21px;
+      right: 104px;
   }
   .navbar .nav-links a {
-    padding: 10px 12px;
-    text-decoration: none;
-    font-weight: 550;
+    height: 72px;
+    padding: 0px, 34px, 0px, 32px;
+
     color: white;
-  }
-  /* Hover effects */
-  .navbar .nav-links a:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-   
-  /* responsive navbar toggle button */
-  .header_text #nav-check, .header_text .nav-btn{
-    display: none;
-  }
-   
-  @media (min-width: 429px) and (max-width: 1024px)  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
 
-    /* own css */
-    .navbar .nav-btn{
-      display: inline-block;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-    }
-    .navbar .nav-btn label {
-      display: inline-block;
-      width: 80px;
-      height: 70px;
-      padding: 25px;
-    }
-    .navbar .nav-btn label span {
-      display: block;
-      height: 10px;
-      width: 25px;
-      border-top: 3px solid #eee;
-    }
-    .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
-      background-color: rgb(9, 14, 90);
-      transition: all 0.5s ease;
-    }
-    .navbar .nav-links{
-      position: absolute;
-      display: block;
-      text-align: center;
-      width: 100%;
-      background-color: rgb(9, 14, 90);
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 70px;
-      right: 0px;
-    }
-    .navbar .nav-links a {
-      display: block;
-    }
-   
-    /* when nav toggle button not checked */
-    .navbar #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-   
-    /* when nav toggle button is checked */
-    .navbar #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 70px);
-      overflow-y: auto;
-    }
-    .navbar .nav-links .loginBtn {
-      padding: 10px 40px ;
-      margin: 20px;
-      font-size:  18px;
-      font-weight: bold;
-      color: rgb(9, 14, 90);
-    }
-    /* Responsive dropdown code */
-    .navbar .nav-links .dropdown, .navbar .nav-links .dropdown2 {
-      float: none;
-      width: 100%;
-    }
-    .navbar .nav-links .drop-content, .navbar .nav-links .drop-content2 {
-      position: relative;
-      background-color: rgb(220, 220, 250);
-      top: 0px;
-      left: 0px;
-    }
-    /* Text color */
-    .navbar .nav-links .drop-content a {
-      color: rgb(9, 14, 90);
-    }  
-   
   }
-
-  @media (min-width: 0px) and (max-width: 429px)  {
-    .navbar .nav-btn{
-      display: inline-block;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-    }
-    .navbar .nav-btn label {
-      display: inline-block;
-      width: 80px;
-      height: 70px;
-      padding: 25px;
-    }
-    .navbar .nav-btn label span {
-      display: block;
-      height: 10px;
-      width: 25px;
-      border-top: 3px solid #eee;
-    }
-    .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
-      background-color: rgb(9, 14, 90);
-      transition: all 0.5s ease;
-    }
-    .navbar .nav-links{
-      position: absolute;
-      display: block;
-      text-align: center;
-      width: 50%;
-      background-color: rgb(9, 14, 90);
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 70px;
-      right: 0px;
-    }
-    .navbar .nav-links a {
-      display: block;
-    }
-   
-    /* when nav toggle button not checked */
-    .navbar #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-   
-    /* when nav toggle button is checked */
-    .navbar #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 70px);
-      overflow-y: auto;
-    }
-    .navbar .nav-links .loginBtn {
-      padding: 10px 40px ;
-      margin: 20px;
-      font-size:  18px;
-      font-weight: bold;
-      color: rgb(9, 14, 90);
-    }
-    /* Responsive dropdown code */
-    .navbar .nav-links .dropdown, .navbar .nav-links .dropdown2 {
-      float: none;
-      width: 100%;
-    }
-    .navbar .nav-links .drop-content, .navbar .nav-links .drop-content2 {
-      position: relative;
-      background-color: rgb(220, 220, 250);
-      top: 0px;
-      left: 0px;
-    }
-    /* Text color */
-    .navbar .nav-links .drop-content a {
-      color: rgb(9, 14, 90);
-    }  
-   
+  .down_icon{
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 21.19px;
+    right: 38px;
+    top: 10px;
   }
-   
-  /* Dropdown menu CSS code */
-  .dropdown{
-    position: relative;
+  /* own css */
+  .navbar .nav-btn{
     display: inline-block;
-  }
-  .drop-content, .drop-content2 {
-    display: none;
     position: absolute;
-    background-color: #1b4cd3;
-    min-width: 120px;
-    font-size: 16px;
-    top: 34px;
-    z-index: 1;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    top: 0px;
+    right: 0px;
   }
-  /* on hover show dropdown */
-  .dropdown:hover .drop-content, .dropdown2:hover .drop-content2 {
+  .navbar .nav-btn label {
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    padding: 25px;
+  }
+  .navbar .nav-btn label span {
+    display: block;
+    height: 10px;
+    width: 25px;
+    border-top: 3px solid #eee;
+  }
+  /* .nav-btn i:hover, .header_text #nav-check {
+    display: block;
+    background-color: rgb(188, 191, 229);
+    transition: all 0.5s ease;
+  } */
+  .navbar .nav-links{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    top: 70px;
+    right: 0px;
+  }
+  .navbar .nav-links a {
     display: block;
   }
-  /* drondown links */
-  .drop-content a {
-    padding: 12px 10px;
-    border-bottom: 1px solid rgb(197, 197, 250);
-    display: block;
-    transition: all 0.5s ease !important;
+ 
+  /* when nav toggle button not checked */
+  /* .navbar #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  } */
+ 
+  /* when nav toggle button is checked */
+  /* .navbar #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  } */
+  .navbar .nav-links .loginBtn {
+    padding: 10px 40px ;
+    margin: 20px;
+    font-size:  18px;
+    font-weight: bold;
+    color: rgb(9, 14, 90);
   }
-  .dropBtn .drop-content a:hover {
-    background-color: rgb(230, 230, 230);
+  /* Responsive dropdown code */
+  .navbar .nav-links .dropdown, .navbar .nav-links .dropdown2 {
+    float: none;
+    width: 100%;
   }
-  .dropdown:hover .dropBtn, .dropdown2:hover .dropBtn2 {
-    background-color: rgba(0, 0, 0, 0.3);
+  .navbar .nav-links .drop-content{
+    position: relative;
+    background-color: #08181B;
+    top: 0px;
+    left: 0px;
   }
-  .dropdown2 .drop-content2 {
+  /* Text color */
+  .navbar .nav-links .drop-content a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }  
+ 
+}
+
+@media (min-width: 0px) and (max-width: 429px)  {
+  .logo_initial_2_div{
     position: absolute;
-    left: 120px;
-    top: 126px;
+    margin-top: 32px;
+    right: 82px;
   }
-  .dropBtn2 i {
-    margin-left: 15px;
+  .nav-btn-cross{
+    color: #ffffff;
+    height: 32px;
+    width: 32px;
+    border-radius: 1px;
+    margin-top: 37px;
   }
+  .nar_bar_btns .nav-btn{
+    display: block;
+    color: #ffffff;
+  }
+  .logo_{
+    margin-top: 29px;
+    margin-left: 16px;
+  }
+  .logo_initial_2_head{
+      display: none;
+  }
+  .logo_initial_1{
+      display: none;
+  }
+  .logo_initial_1{
+      height: 28px;
+      width: 82px;
+      left: 73px;
+      margin-top: 39px;
+  }
+  .logo_initial_2_head{
+      height: 28px;
+      width: 104px;
+      left: 161px;
+      margin-top: 39px;
+  }
+  .header{
+      height: 97px;
+  }
+  .logo_initial_2{
+      display: none;
+  }
+  .logo_initial_2_div{
+      margin-top: 37px;
+  }
+  .navbar .nav-links a {
+      height: 72px;
+      padding: 0px, 34px, 0px, 32px;
+
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+  
+    }
+  /* own css */
+  /* .navbar .nav-btn{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  } */
+  .navbar .nav-btn label {
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    padding: 25px;
+  }
+  .navbar .nav-btn label span {
+    display: block;
+    height: 10px;
+    width: 25px;
+    border-top: 3px solid #eee;
+  }
+  /* .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+    background-color: rgb(9, 14, 90);
+    transition: all 0.5s ease;
+  } */
+  .navbar .nav-links{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    top: 43px;
+    right: 0px;
+    padding-top: 15px;
+  }
+  .down_icon{
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 21.19px;
+    right: 38px;
+    top: 10px;
+  }
+  .navbar .nav-links a {
+    display: block;
+    padding-left: 44px
+  }
+ 
+  /* when nav toggle button not checked */
+  /* .navbar #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  } */
+ 
+  /* when nav toggle button is checked */
+  /* .navbar #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  } */
+  /* Responsive dropdown code */
+  .navbar .nav-links .dropdown, .navbar .nav-links .dropdown2 {
+    float: none;
+    width: 100%;
+  }
+  .navbar .nav-links .drop-content{
+    position: relative;
+    background-color: #08181B;
+    top: 0px;
+    left: 0px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+  /* Text color */
+  .navbar .nav-links .drop-content a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left; 
+  }  
+ 
+}
+ 
+/* Dropdown menu CSS code */
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.drop-content, .drop-content2 {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 120px;
+  font-size: 16px;
+  top: 34px;
+  z-index: 1;
+}
+/* on hover show dropdown */
+.dropdown:hover .drop-content, .dropdown2:hover .drop-content2 {
+  display: block;
+}
+/* drondown links */
+.drop-content a {
+  padding: 12px 10px;
+  display: block;
+}
+.dropBtn .drop-content a:hover {
+  background-color: rgb(230, 230, 230);
+}
+.dropdown:hover .dropBtn, .dropdown2:hover .dropBtn2 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.dropdown2 .drop-content2 {
+  position: absolute;
+  left: 120px;
+  top: 126px;
+}
+.dropBtn2 i {
+  margin-left: 15px;
+}

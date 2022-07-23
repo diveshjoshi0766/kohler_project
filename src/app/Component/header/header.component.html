@@ -1,68 +1,63 @@
 <div class="header">
     <div class="header_logo">
         <div class="header_sub_logo">
-            <h1>Logo</h1>
-            <div class="header_logo_text">
-                <p class="logo_initial_1">Anthem</p> <p class="logo_initial_2"> Smart Hub</p>
-            </div>
+            <img [src]="imgSrc" alt="Kohler" class="logo_"/>
+            <p class="logo_initial_1">Anthem </p> <p class="logo_initial_2_head">Smart Hub</p>
+            
         </div>
     </div>
     <div class="header_text">
-        <i class="fas fa-user" style="color: white"></i>
-        <p class="logo_initial_2">Kohler Hub User</p>
-        <input type="checkbox" id="nav-check">
-        <i class="fas fa-bars"></i>
-        <div class="nav-btn">
-            <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-            </label>
+        <div class="logo_initial_2_div">
+            <i class="fas fa-user fa-2x" style="color: white"></i>
+            <p class="logo_initial_2">Kohler Hub User</p>
+        </div>
+        
+        <div class="nar_bar_btns" (click)="temp_fun()">
+          <div class="nav-btn">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <div class="nav-btn-cross">
+            <i class="fas fa-cross fa-2x"></i>
+          </div>
         </div>
     </div>
 </div>
 
 <div class="navbar">    
-    <!-- responsive navbar toggle button -->
-    
-    <!-- Navbar items -->
-    <div class="nav-links">
-      <a href="#">My Devices</a>
-      <a href="#">Presets</a>
-      <a href="#">Experience</a>
- 
-      <!-- Dropdown menu -->
-      <div class="dropdown">
-        <a class="dropBtn" href="#">Settings 
+  <div class="nav-links">
+    <a href="#">My Devices</a>
+    <a href="#">Presets</a>
+    <a href="#">Experience</a>
+    <div class="dropdown" (click)="show_settings()" [ngStyle]="{'backgroundColor': show_stg ? '#002121' : '#000000'}">
+      <a class="dropBtn" href="#">Settings 
+        <div class="down_icon">
           <i class="fas fa-angle-down"></i>
-        </a>
-        <div class="drop-content">
-          <a href="#">Global Settings</a>
-          <a href="#">DTV+User Int.</a>
-          <a href="#">Anthem User Int</a>
-          <a href="#">Values</a>
-          <a href="#">Anthem User Int</a>
-          <a href="#">Remote Button</a>
- 
-          <!-- Creating sub menu Dropdown -->
         </div>
+      </a>
+      <div class="drop-content" *ngIf="show_stg"> 
+        <a href="#">Global Settings</a>
+        <a href="#">DTV+User Int.</a>
+        <a href="#">Anthem User Int</a>
+        <a href="#">Values</a>
+        <a href="#">Anthem User Int</a>
+        <a href="#">Remote Button</a>
       </div>
- 
-      <a href="#">Updates</a>
-      <div class="dropdown">
-        <a class="dropBtn" href="#">Network & Utilities 
+    </div>
+    <a href="#">Updates</a>
+    <div class="dropdown" (click)="show_networkSetting()" [ngStyle]="{'backgroundColor': show_ntw ? '#002121' : '#000000'}">
+      <a class="dropBtn" href="#">Network & Utilities 
+        <div class="down_icon">
           <i class="fas fa-angle-down"></i>
-        </a>
-        <div class="drop-content">
-          <a href="#">Global Settings</a>
-          <a href="#">DTV+User Int.</a>
-          <a href="#">Anthem User Int</a>
-          <a href="#">Values</a>
-          <a href="#">Anthem User Int</a>
-          <a href="#">Remote Button</a>
- 
-          <!-- Creating sub menu Dropdown -->
         </div>
+      </a>
+      <div class="drop-content" *ngIf="show_ntw">
+        <a href="#">Global Settings</a>
+        <a href="#">DTV+User Int.</a>
+        <a href="#">Anthem User Int</a>
+        <a href="#">Values</a>
+        <a href="#">Anthem User Int</a>
+        <a href="#">Remote Button</a>
       </div>
     </div>
   </div>
+</div>
