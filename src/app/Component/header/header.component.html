@@ -28,8 +28,8 @@
     <a href="#">My Devices</a>
     <a href="#">Presets</a>
     <a href="#">Experience</a>
-    <div class="dropdown" (click)="show_settings()" [ngStyle]="{'backgroundColor': show_stg ? '#002121' : '#000000'}">
-      <a class="dropBtn" href="#">Settings 
+    <div class="dropdown" (click)="show_settings()" >
+      <a class="dropBtn" href="#" [ngStyle]="{'backgroundColor': show_stg ? '#002121' : '#000000'}">Settings 
         <div class="down_icon">
           <i class="fas fa-angle-down"></i>
         </div>
@@ -44,8 +44,8 @@
       </div>
     </div>
     <a href="#">Updates</a>
-    <div class="dropdown" (click)="show_networkSetting()" [ngStyle]="{'backgroundColor': show_ntw ? '#002121' : '#000000'}">
-      <a class="dropBtn" href="#">Network & Utilities 
+    <div class="dropdown" (click)="show_networkSetting()" >
+      <a class="dropBtn" href="#" [ngStyle]="{'backgroundColor': show_ntw ? '#002121' : '#000000'}">Network & Utilities 
         <div class="down_icon">
           <i class="fas fa-angle-down"></i>
         </div>
@@ -61,3 +61,18 @@
     </div>
   </div>
 </div>
+
+<!-- 
+<div class="li_ele_display">
+  <ul class="li_elements" >
+      <li class="dropdown__item"><a href="#" class="nav__link">Global Settings</a></li>
+      <li class="dropdown__item"><a href="#" class="nav__link">DTV+User Int.</a></li>
+      <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
+      <li class="dropdown__item"><a href="#" class="nav__link">Values</a></li>
+      <li class="dropdown__item"><a href="#" class="nav__link">Anthem User Int</a></li>
+      <li class="dropdown__item"><a href="#" class="nav__link">Remote Button</a></li>
+  </ul>
+</div> -->
+
+
+

@@ -11,6 +11,11 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  // bluetooth:{enabled:true,
+  //   status:Connected/NotConnected/Error,
+  //   devices:[],
+  //   }
   // el:any = document.getElementById('status');
   // const btn:any = document.getElementById('wifi-status');
   // var formElement = <HTMLFormElement>document.getElementById('123');
