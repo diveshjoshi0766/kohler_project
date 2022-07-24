@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   show_stg:boolean = false
   show_ntw:boolean = false
+  window_width = window.innerWidth
   imgSrc = window.innerWidth > 1024 ? ('assets/Desktop/Kohler Hub.svg') : window.innerWidth < 428 ? ('assets/Mobile/KohlerIconMobile.svg') : ('assets/Tablet/Kohler Hub.svg')
   constructor() { }
 

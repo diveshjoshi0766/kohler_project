@@ -29,7 +29,7 @@
     <a href="#">Presets</a>
     <a href="#">Experience</a>
     <div class="dropdown" (click)="show_settings()" >
-      <a class="dropBtn" href="#" [ngStyle]="{'backgroundColor': show_stg ? '#002121' : '#000000'}">Settings 
+      <a class="dropBtn" href="#" [ngStyle]="{'backgroundColor': show_stg && window_width < 1024 ? '#002121' : '#000000'}">Settings 
         <div class="down_icon">
           <i class="fas fa-angle-down"></i>
         </div>
@@ -45,7 +45,7 @@
     </div>
     <a href="#">Updates</a>
     <div class="dropdown" (click)="show_networkSetting()" >
-      <a class="dropBtn" href="#" [ngStyle]="{'backgroundColor': show_ntw ? '#002121' : '#000000'}">Network & Utilities 
+      <a class="dropBtn" href="#" [ngStyle]="{'backgroundColor': show_ntw && window_width < 1024  ? '#002121' : '#000000'}">Network & Utilities 
         <div class="down_icon">
           <i class="fas fa-angle-down"></i>
         </div>

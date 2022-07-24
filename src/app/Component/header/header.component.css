@@ -72,6 +72,7 @@ margin-left: 15px;
 display: none;
 }
 
+
 /* here we have pasted */
 
 .navbar{
@@ -93,6 +94,7 @@ display: none;
   font-size: 18px;    
   margin-top: 22px;
 }
+
  
 .navbar .nav-links a {
   padding: 10px 12px;
@@ -107,12 +109,10 @@ display: none;
   text-align: left;
 }
 
-.navbar .nav-links a:hover{
-  border-bottom: 2px solid #ffffff;
-}
 /* Hover effects */
 .navbar .nav-links a:hover{
  color : #00A3A3;
+ border-bottom: 2px solid #ffffff;
 }
 
 .nav-btn, .nav-btn-cross{
@@ -143,6 +143,7 @@ display: none;
   color: #ffffff;
   font-style: Roboto, "Helvetica Neue", sans-serif;
 }
+
 
 
 
@@ -191,6 +192,12 @@ display: none;
       position: absolute;
       margin-top: 21px;
       right: 104px;
+  }
+  .navbar{
+    border-bottom: 0px;
+  }
+  .navbar .nav-links a:hover{
+    border-bottom: 0px;
   }
   .navbar .nav-links a {
     height: 72px;
@@ -273,6 +280,7 @@ display: none;
     width: 100%;
   }
   .navbar .nav-links .drop-content{
+    display: block;
     position: relative;
     background-color: #08181B;
     top: 0px;
@@ -340,6 +348,12 @@ display: none;
   }
   .logo_initial_2_div{
       margin-top: 37px;
+  }
+  .navbar{
+    border-bottom: 0px;
+  }
+  .navbar .nav-links a:hover{
+    border-bottom: 0px;
   }
   .navbar .nav-links a {
       height: 72px;
@@ -416,6 +430,7 @@ display: none;
     width: 100%;
   }
   .navbar .nav-links .drop-content{
+    display: block;
     position: relative;
     background-color: #08181B;
     top: 0px;
@@ -455,8 +470,8 @@ display: none;
   z-index: 1;
 }
 /* on hover show dropdown */
-.dropdown:hover .drop-content, .dropdown2:hover .drop-content2 {
-  display: block;
+.dropdown:hover .drop-content{
+  display: none;
 }
 /* drondown links */
 .drop-content a {
